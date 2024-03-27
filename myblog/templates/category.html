@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+
+{%block title%}  cats {%endblock%}
+
+
+{%block content%}
+
+
+<div class="container-custom">
+  <div class="row">
+    <div class="col s12 12 l12">
+
+  <h3>  Heading of categories -   {{cats.title}}  </h3>
+
+
+
+
+    <img src="/media/{{cats.image}}" class="responsive-img" alt=",,,">
+    <br>
+      <p>
+
+               {{ cats.content|safe }}
+
+      </p>
+
+
+
+  </div>
+ </div>
+</div>
+
+{%endblock%}
